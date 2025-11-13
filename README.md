@@ -41,19 +41,11 @@ Other: Pillow (for images), Python Decimal for precision math
 
 
 Setup Instructions
-# Clone the repository
+
 git clone https://github.com/jcarlosb1996/fleet_finance_tracker.git
 cd fleet_finance_tracker
-
-# Create and activate virtual environment
 python3 -m venv venv
 source venv/bin/activate
-
-# Install dependencies
 pip install -r requirements.txt
-
-# Run migrations
 python3 manage.py migrate
-
-# Start the local server
 python3 manage.py runserver
