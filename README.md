@@ -42,6 +42,9 @@ Other: Pillow (for images), Python Decimal for precision math
 
 Setup Instructions
 
+## ⚙️ Setup Instructions
+```bash
+
 git clone https://github.com/jcarlosb1996/fleet_finance_tracker.git
 cd fleet_finance_tracker
 python3 -m venv venv
