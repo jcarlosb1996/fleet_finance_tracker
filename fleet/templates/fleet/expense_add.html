@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Add Expense</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-light">
+    <div class="container py-4" style="max-width: 800px">
+      <h1 class="mb-3">Add Recurring Expense</h1>
+
+      <form method="post" class="bg-white p-4 rounded border">
+        {% csrf_token %} {{ form.as_p }}
+        <div class="form-text mb-2">
+          Leave <strong>Vehicle</strong> empty for a global expense (100%
+          yours). If you choose a car that has a partner, your weekly share will
+          be 50%.
+        </div>
+        <button class="btn btn-primary">Save Expense</button>
+        <a href="{% url 'expense_list' %}" class="btn btn-link">Cancel</a>
+      </form>
+    </div>
+  </body>
+</html>
